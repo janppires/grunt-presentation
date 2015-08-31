@@ -79,6 +79,16 @@ For each task configuration it’s possible to override any default configuratio
 
 Because most tasks perform file operations, Grunt has powerful abstractions for declaring on which files the task should operate. For more info please visit [File](http://gruntjs.com/configuring-tasks#files) section, in the official documentation.
 
+#Step 4 - Configure And Start A Static Web Server
+With Grunt is possible to easily start a static web server. We just need to add `grunt-contrib-connect` task to Gruntfile. 
+Now we run the task with the name given. If we want to keep the server alive, just append `:keepalive`.
+
+`grunt connect:my_server_with_defaults:keepalive`
+
+More info at [grunt-contrib-connect](https://github.com/gruntjs/grunt-contrib-connect) github web page.
+
+
+
 # Useful Links
 ## OS Package Manager
 - OSX: Brew @ [http://brew.sh/](http://brew.sh/)
