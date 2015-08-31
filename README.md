@@ -1,5 +1,17 @@
 # Grunt Presentation
-A few lines about a _javascript task runner_
+A few lines about a _javascript task runner_.
+
+This presentation is divided into steps. For each step we have an associated branch, that we can checkout and do some experiments.
+
+Names of branches available in this project:
+
+1. step-0 : Web project without a task runner
+2. step-1 : Install Packet Managers and Grunt
+3. step-2 : Gruntfile Cofiguration
+4. step-3 : Configure Tasks and Targets
+
+## Step 0 - Web project without a task runner
+The first stage begins with a project without any task runner. From here we set Grunt to add some cool helper tools that enables and improves our productivity.
 
 ## Step 1 - Install **Brew** (OS Package Manager), **NPM** (Node Package Manager) and **Grunt**
 ### Install Package Managers
