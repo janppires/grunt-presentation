@@ -15,48 +15,39 @@
 		<script src="../external_components/angular-material/angular-material.js"></script>
 		<script src="../external_components/angular-aria/angular-aria.js"></script>
 		<script src="../external_components/bootstrap/js/bootstrap.js"></script>
-		
+
+		<script src="components/example-app.module.js"></script>
+		<script src="components/container-resizer/container-resizer.directive.js"></script>
 	</head>
-    <body ng-app="ExampleApp" ng-controller="ExampleCtrl" >
+    <body class="container" ng-app="ExampleApp" ng-controller="ExampleCtrl" >
     	<header>
 			<md-toolbar>
-			      <div class="md-toolbar-tools">
-			        <md-button class="md-icon-button" aria-label="Settings">
-			        	<md-icon md-font-library="material-icons">menu</md-icon>
-			        </md-button>
-			        <h2>
-			          <span>PCT Application Toolbar</span>
-			        </h2>
-			        <span flex></span>
-			        <md-button class="md-raised" aria-label="More">
-			          More info
-			        </md-button>
-			      </div>
-			    </md-toolbar>
+		      <div class="md-toolbar-tools">
+		        <md-button class="md-icon-button" aria-label="Settings" >
+		        	<md-icon md-font-library="material-icons">menu</md-icon>
+		        </md-button>
+		        <h2>
+		          <span>Presenting: Grunt, The Javascript Task Runner</span>
+		        </h2>
+		        <span flex></span>
+		        <md-button class="md-raised" aria-label="More" ng-href="http://gruntjs.com" target="_blank">
+		          Grunt Website
+		        </md-button>
+		      </div>
+		    </md-toolbar>
     	</header>
-    	<section class="container md-padding">
+    	<section class="md-padding" >
 			<md-whiteframe class="md-whiteframe-z1" layout layout-align="center center">
-			    <h1>Hello {{groupName}} :)</h1>
+			    <h1>Hello, {{groupName}} :)</h1>
 			</md-whiteframe>
-			<md-whiteframe class="md-whiteframe-z1 md-padding" layout layout-align="center center">
-			    <div ng-bind-html="markdownText"></div>
+			<md-whiteframe 
+				class="md-whiteframe-z1 md-padding" 
+				layout layout-align="center center">
+				<md-content layout-fill layout-padding >
+				    <div ng-bind-html="markdownText" king-container-resize style="overflow: scroll;">
+				    </div>
+				</md-content>
 			</md-whiteframe>
 	    </section>
-    	<footer class="footer">
-    		<div class="container">
-    			Want to know more?
-    		</div>
-    	</footer>
-	    <script type="text/javascript">
-	    	angular.module('ExampleApp', ['ngMaterial'])
-	    		.controller('ExampleCtrl', function($scope, $sce, $http){
-					$http.get('../README.md')
-					  .success(function(data) {
-					  	var html = new showdown.Converter().makeHtml(data);
-						$scope.markdownText = $sce.trustAsHtml(html);
-					  })
-	    			$scope.groupName = "Knowledge Share Group"
-	    		})
-	    </script>
     </body>
 </html>
