@@ -12,6 +12,7 @@ Names of branches available in this project:
 
 ## Step 0 - Web project without a task runner
 The first stage begins with a project without any task runner. From here we set Grunt to add some cool helper tools that enables and improves our productivity.
+In the project root folder, we can run `python -m SimpleHTTPServer 9001` to start a server, and access to [http://localhost:9001/app](http://localhost:9001/app), in our favorite browser.
 
 ## Step 1 - Install **Brew** (OS Package Manager), **NPM** (Node Package Manager) and **Grunt**
 ### Install Package Managers
@@ -80,14 +81,14 @@ Because most tasks perform file operations, Grunt has powerful abstractions for 
 
 # Useful Links
 ## OS Package Manager
-- OSX: Brew @ http://brew.sh/
-- Linux: Brew @ http://brew.sh/linuxbrew/
-- Windows: Scoop @ http://scoop.sh/
+- OSX: Brew @ [http://brew.sh/](http://brew.sh/)
+- Linux: Brew @ [http://brew.sh/linuxbrew/](http://brew.sh/linuxbrew/)
+- Windows: Scoop @ [http://scoop.sh/](http://scoop.sh/)
 
 ## NPM - Node Package Manager
-- npm @ http://npmjs.com
+- npm @ [http://npmjs.com](http://npmjs.com)
 
 ## Grunt
-- http://gruntjs.com
+- [http://gruntjs.com](http://gruntjs.com)
 
 
