@@ -7,7 +7,7 @@ To install **brew** and **npm**, please consult **Useful Links** section.
 If you don't have yet **npm** configured in your project folder, please run `npm init` and follow the instructions.
 
 ### Install Grunt: Grunt CLI, Grunt Task Runner and Grunt Plugins
-After install **npm** in your system, install _Grunt Command Line Interface_ (CLI), with command `npm install -g grunt-cli`. This will put the grunt command in your system path, allowing it to be run from any directory. 
+After install **npm** in our system, we start by install _Grunt Command Line Interface_ (CLI), with command `npm install -g grunt-cli`. This will put the grunt command in your system path, allowing it to be run from any directory. 
 Note that installing **grunt-cli** does not install the _Grunt task runner_. To install the _Grunt task runner_ we need to run `npm install grunt --save-dev`. This command will add the latest version of _Grunt task runner_ to the **package.json** file, under the **devDependencies** element.
 Lastly, after we decide which _Grunt Plugins_ we want to use, just need to run `npm install <grunt-plugin-name> --save-dev` command.
 And by this time we are ready to start configure our **Gruntfile**.
@@ -43,6 +43,28 @@ A Gruntfile is comprised of the following parts:
 An example of a default task, which can be invoked through the command line, by typing `grunt` or `grunt default`. In this case, this represents the call of grunt **uglify** task.
 
 #Step 3 - Configure Tasks and Targets
+When Grunt runs a task, it looks for a property with same name in his configuration object. It’s possible to configure multi-tasks of the same task, with different setup, called targets. We just need to give a proper name. In this way, we are able to call all the multi-tasks at once, by typing the task `grunt task-name`, or a specific target, by typing `task-name:target`.
+For each task configuration it’s possible to override any default configuration available. The same could be valid for each target.
+
+    grunt.initConfig({
+        concat: {
+            options: {}
+            task-target-name-1: {
+                options: {}
+                target options and files goes here
+            },
+            task-target-name-2: {
+				target options and files goes here
+            },
+        },
+        uglify: {
+            task-target-name-3: {
+                target options and files goes here
+            },
+        },
+    });
+
+Because most tasks perform file operations, Grunt has powerful abstractions for declaring on which files the task should operate. For more info please visit [File](http://gruntjs.com/configuring-tasks#files) section, in the official documentation.
 
 # Useful Links
 ## OS Package Manager
