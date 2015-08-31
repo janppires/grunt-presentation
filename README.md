@@ -68,10 +68,14 @@ Because most tasks perform file operations, Grunt has powerful abstractions for 
 
 # Useful Links
 ## OS Package Manager
-OSX: Brew @ http://brew.sh/
-Linux: Brew @ http://brew.sh/linuxbrew/
-Windows: Scoop @ http://scoop.sh/
+- OSX: Brew @ http://brew.sh/
+- Linux: Brew @ http://brew.sh/linuxbrew/
+- Windows: Scoop @ http://scoop.sh/
+
 ## NPM - Node Package Manager
-npm @ http://npmjs.com
+- npm @ http://npmjs.com
+
+## Grunt
+- http://gruntjs.com
 
 
