@@ -1,5 +1,8 @@
 {
   "name": "grunt-presentation",
   "version": "0.0.0",
-  "homepage": "https://github.com/janppires/grunt-presentation"
+  "homepage": "https://github.com/janppires/grunt-presentation",
+  "devDependencies": {
+    "grunt": "^0.4.5"
+  }
 }
