@@ -6,8 +6,8 @@ This presentation is divided into steps. For each step we have an associated bra
 Names of branches available in this project:
 
 1. step-0 : Web project without a task runner
-2. step-1 : Install Packet Managers and Grunt
-3. step-2 : Gruntfile Cofiguration
+2. step-1 : Install Package Managers and Grunt
+3. step-2 : Gruntfile Configuration
 4. step-3 : Configure Tasks and Targets
 
 ## Step 0 - Web project without a task runner
@@ -100,5 +100,3 @@ More info at [grunt-contrib-connect](https://github.com/gruntjs/grunt-contrib-co
 
 ## Grunt
 - [http://gruntjs.com](http://gruntjs.com)
-
-
